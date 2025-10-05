@@ -5,21 +5,21 @@
 class Apkext < Formula
   desc "Modern Go-based tool for extracting and building APK files with embedded JAR utilities"
   homepage "https://github.com/dmikushin/apkext"
-  version "1.0.33"
+  version "1.0.34"
   license "MIT"
 
   on_macos do
     on_intel do
-      url "https://github.com/dmikushin/apkext/releases/download/v1.0.33/apkext_1.0.33_Darwin_x86_64.tar.gz"
-      sha256 "0f55043f3d9d21eacb7245f954c4ad27046709f56c5492e9d1a5006a6e1c737c"
+      url "https://github.com/dmikushin/apkext/releases/download/v1.0.34/apkext_1.0.34_Darwin_x86_64.tar.gz"
+      sha256 "a1130d0f780fd428162102b0441aaac2d7d638b48594e707ad148ccb7b81bcfe"
 
       def install
         bin.install "apkext"
       end
     end
     on_arm do
-      url "https://github.com/dmikushin/apkext/releases/download/v1.0.33/apkext_1.0.33_Darwin_arm64.tar.gz"
-      sha256 "fde514c74ff1033dce9b63d68800de66b39d8315828c537f635a78f65c047b82"
+      url "https://github.com/dmikushin/apkext/releases/download/v1.0.34/apkext_1.0.34_Darwin_arm64.tar.gz"
+      sha256 "3599d5c14ed886d7969b0841c4d3289859742a1861c544ea22abdfd0fe5382b1"
 
       def install
         bin.install "apkext"
@@ -30,8 +30,8 @@ class Apkext < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/dmikushin/apkext/releases/download/v1.0.33/apkext_1.0.33_Linux_x86_64.tar.gz"
-        sha256 "a6d9335e84b568204d8e42c86f9072327334e62e482bda12d5d37cfce577072f"
+        url "https://github.com/dmikushin/apkext/releases/download/v1.0.34/apkext_1.0.34_Linux_x86_64.tar.gz"
+        sha256 "bcc9fcf3858e29fd9d63d6af078767a848cf3f22857f843684d7e9afe754258e"
 
         def install
           bin.install "apkext"
@@ -40,8 +40,8 @@ class Apkext < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/dmikushin/apkext/releases/download/v1.0.33/apkext_1.0.33_Linux_arm64.tar.gz"
-        sha256 "6052fdb5f7156d05e098bb93d8e74bbabf231deee6e783be44ac8d49cfd4fac4"
+        url "https://github.com/dmikushin/apkext/releases/download/v1.0.34/apkext_1.0.34_Linux_arm64.tar.gz"
+        sha256 "5600aef9ed6b12d395de05c38fa46019017f0704574d044a62dc0afcd0a19206"
 
         def install
           bin.install "apkext"
