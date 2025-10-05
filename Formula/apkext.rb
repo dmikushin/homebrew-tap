@@ -11,7 +11,7 @@ class Apkext < Formula
   on_macos do
     on_intel do
       url "https://github.com/dmikushin/apkext/releases/download/v1.0.0/apkext_1.0.0_Darwin_x86_64.tar.gz"
-      sha256 "7737d0ec2bdd557cc610755f0f3702a5b83f7a286d4bf4ed0607de129a548236"
+      sha256 "c6b374e68df6c60b83b2d8aab13004774722c25bd48dc91f46904316bb8e4635"
 
       def install
         bin.install "apkext"
@@ -19,7 +19,7 @@ class Apkext < Formula
     end
     on_arm do
       url "https://github.com/dmikushin/apkext/releases/download/v1.0.0/apkext_1.0.0_Darwin_arm64.tar.gz"
-      sha256 "934b0481f583cd032bc1866dbdc09f642c4488e64ec3f48fa54b4732f9add612"
+      sha256 "692300cf74bc203cdc530643c1a6215247a0f17c25550fa4febd62161951eecf"
 
       def install
         bin.install "apkext"
@@ -31,7 +31,7 @@ class Apkext < Formula
     on_intel do
       if Hardware::CPU.is_64_bit?
         url "https://github.com/dmikushin/apkext/releases/download/v1.0.0/apkext_1.0.0_Linux_x86_64.tar.gz"
-        sha256 "bf8b91851f0035d2417fc6cc20240ebb67210e6a0a38a6a0eb04aeac413889c3"
+        sha256 "3431075e58f5b2d39b37fb4fa4d14e17b146ffc301e86dfc79a98d7d73f4cb65"
 
         def install
           bin.install "apkext"
@@ -41,7 +41,7 @@ class Apkext < Formula
     on_arm do
       if Hardware::CPU.is_64_bit?
         url "https://github.com/dmikushin/apkext/releases/download/v1.0.0/apkext_1.0.0_Linux_arm64.tar.gz"
-        sha256 "9990d9c4c8201dfbc27e390beffb613c6d722bc53fbbbf1ed87d92bc4e2a0371"
+        sha256 "5cfea760453410af4adaee9833a268656aa9db7c456e19662d2941e659a97a6d"
 
         def install
           bin.install "apkext"
