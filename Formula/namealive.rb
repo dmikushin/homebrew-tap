@@ -5,21 +5,21 @@
 class Namealive < Formula
   desc "High-performance network host discovery and identification tool"
   homepage "https://github.com/dmikushin/namealive"
-  version "1.0.0"
+  version "1.1.0"
   license "MIT"
 
   on_macos do
     on_intel do
-      url "https://github.com/dmikushin/namealive/releases/download/v1.0.0/namealive_1.0.0_Darwin_x86_64.tar.gz"
-      sha256 "0fc26dfd540cb65ed031590bc828371fc687c03d3cd7f5844a409e30fdbf0a7a"
+      url "https://github.com/dmikushin/namealive/releases/download/v1.1.0/namealive_1.1.0_Darwin_x86_64.tar.gz"
+      sha256 "d11b1873d10d03c46f25dc76b3487d8a6f67fdb50835188d3793597c14643ff4"
 
       def install
         bin.install "namealive"
       end
     end
     on_arm do
-      url "https://github.com/dmikushin/namealive/releases/download/v1.0.0/namealive_1.0.0_Darwin_arm64.tar.gz"
-      sha256 "0f3639fb4669882a56698565a7c324cbffb60cace5d84903e369dcc1b04ce2ff"
+      url "https://github.com/dmikushin/namealive/releases/download/v1.1.0/namealive_1.1.0_Darwin_arm64.tar.gz"
+      sha256 "31c3f8a84d74d997ec4a16bb3d188d22628d6e2abff1843fb8d3f27095999fb1"
 
       def install
         bin.install "namealive"
@@ -30,8 +30,8 @@ class Namealive < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/dmikushin/namealive/releases/download/v1.0.0/namealive_1.0.0_Linux_x86_64.tar.gz"
-        sha256 "807eb7862197ac56fca1200ffc187913b67fc59a6e4d7327d885fed9ae634f14"
+        url "https://github.com/dmikushin/namealive/releases/download/v1.1.0/namealive_1.1.0_Linux_x86_64.tar.gz"
+        sha256 "f140d48a944e7c98ba74a55e0572698e46589c9a61271ec6176ebb75ea4e2d30"
 
         def install
           bin.install "namealive"
@@ -40,8 +40,8 @@ class Namealive < Formula
     end
     on_arm do
       if !Hardware::CPU.is_64_bit?
-        url "https://github.com/dmikushin/namealive/releases/download/v1.0.0/namealive_1.0.0_Linux_armv6.tar.gz"
-        sha256 "db2f0031d850728814e018e1363e3c8b6847ed2a204e791a92cc06e217a603e1"
+        url "https://github.com/dmikushin/namealive/releases/download/v1.1.0/namealive_1.1.0_Linux_armv6.tar.gz"
+        sha256 "42ee643643e3079e06f940b14a448e61dc16aadf564badcbdfbf9ecdc273ec78"
 
         def install
           bin.install "namealive"
@@ -50,8 +50,8 @@ class Namealive < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/dmikushin/namealive/releases/download/v1.0.0/namealive_1.0.0_Linux_arm64.tar.gz"
-        sha256 "19dd87d5d43d927c60ea18d83f99feb5ee20f743289d26d8d0121e08db6d0a25"
+        url "https://github.com/dmikushin/namealive/releases/download/v1.1.0/namealive_1.1.0_Linux_arm64.tar.gz"
+        sha256 "49c45b4c423c67b9e3fe217ee61bd379071b7e758c7ff1c3dbeda28f738ff9ec"
 
         def install
           bin.install "namealive"
